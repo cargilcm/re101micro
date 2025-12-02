@@ -598,14 +598,14 @@ func main() {
   //  t.CloseTerms()
   //  for ane := range t.List[1].Panes.(*Pane) {
  //       if tp, ok := ane.(*action.TermPane); ok {
-     if tp,ok := t.List[1].Panes[0].(*action.TermPane); ok {
+     //if tp,ok := t.List[1].Panes[0].(*action.TermPane); ok {
  //    if tp := t.List[1].Panes[0]; tp!=nil { // t.List[1].Panes[0].(*action.TermPane); ok {
 
-        screen.TermMessage(tp.Name())
+    //    screen.TermMessage(tp.Name())
     //	tp.Quit()
-    	} 
+    //	} 
     tp:=t.List[0].Panes[0].(*action.BufPane)
-    tp.Quit()
+   // tp.Quit()
     
   //  tp.HandleTermClose()
 
