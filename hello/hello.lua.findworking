@@ -1,0 +1,35 @@
+local micro = import("micro")
+local buffer = import("micro/buffer")
+local os = import("os")
+
+local onstart = true
+local res = "hi"
+local str = ""
+function init()
+	if onstart == false then
+		return
+	end
+
+    str = os.Getenv("FINDSTR")
+	if str ~= "" then
+	    local bp2 = micro.CurPane()
+		bp2:Search(str, false, true)
+		str = bp2:Name().."3"
+	end
+	onstart = false
+    --	wrt()
+end
+
+--str = res
+function wrt()
+    local file = io.open("my_file2.txt", "w")  -- "w" for write mode
+ --   micro.InfoBar():Message("Minimal command executed!")
+    if file then
+        file:write(str)
+        file:close()  -- Close the file when done
+    else
+        print("Could not open file")
+    end
+end
+
+--onBufPaneOpen()

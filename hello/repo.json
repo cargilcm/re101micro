@@ -1,0 +1,6 @@
+{
+  "name": "hello",
+  "website": "https://example.com/my-plugin",
+  "description": "A plugin that adds amazing features to Micro",
+  "dependencies": []
+}

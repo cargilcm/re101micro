@@ -1,0 +1,14 @@
+my interpretations from here https://www.google.com/search?q=what+types+of+software+building+challenges+are+worthwhile+pursuits+as+far+as+being+intrinsically+motivating&client=ms-android-motorola-rvo3&sca_esv=267665e6926584fe&sxsrf=AE3TifNs5VtqomFvN9z0CCLNvgPtmEo-Sw%3A1764331195128&ei=u44paYjJB6_mwN4P-JfR0Ak&oq=what+types+of+software+building+challenges+are+worthwhile+pursuits+as+far+as+being+intrinsically+motivating&gs_lp=EhNtb2JpbGUtZ3dzLXdpei1zZXJwImt3aGF0IHR5cGVzIG9mIHNvZnR3YXJlIGJ1aWxkaW5nIGNoYWxsZW5nZXMgYXJlIHdvcnRod2hpbGUgcHVyc3VpdHMgYXMgZmFyIGFzIGJlaW5nIGludHJpbnNpY2FsbHkgbW90aXZhdGluZ0iVjwFQ_RZY3o0BcAF4AZABAJgBjgGgAZMTqgEEMjEuNrgBA8gBAPgBAZgCAaACEcICChAAGLADGNYEGEeYAwCIBgGQBgiSBwExoAe_CbIHALgHAMIHAzMtMcgHEA&sclient=mobile-gws-wiz-serp#sbfbu=1&pi=what%20types%20of%20software%20building%20challenges%20are%20worthwhile%20pursuits%20as%20far%20as%20being%20intrinsically%20motivating
+
+zyedidia has focused on..
+
+Creative and Aesthetic Pursuits by:
+Designing clean, well-decoupled, and highly maintainable code.
+
+Building Useful and Impactful Applications by:
+Open-source contributions, where the work benefits a wider community and aligns with a passion for knowledge sharing
+
+Challenging and Complex Problem-Solving:
+(highlight i terpreted mission focus here) eg an oss tui editor atmosphere
+where devs can contribute patches and plugins to evolve editors compliant within confines of extant protocols and
+interfaces ie: vt100, bash, others?

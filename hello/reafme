@@ -1,0 +1,5 @@
+cp this whole dir to
+
+/data/data/com.termux/files/home/.config/micro/plug/hello
+
+and when micro starts itll create my_file.txt with str in it
