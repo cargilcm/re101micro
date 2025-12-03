@@ -505,11 +505,12 @@ func main() {
    	//cursorc.CurSelection[0].X=42
    //	cursorc.CurSelection[1].X=43
  //  pane.StartOfLine();
-    pane.SelectLine();
-   pane.SelectDown();
+   /** pane.SelectLine();
+  // pane.SelectDown();
       // pane.SelectLine();
-          pane.SelectDown();
+   //       pane.SelectDown();
    pane.Cursor.AddLineToSelection()
+   */
  //  pane.CursorDown()
     //      pane.SelectLine();
  //  pane.Cursor.AddLineToSelection()
@@ -604,6 +605,8 @@ func main() {
     //    screen.TermMessage(tp.Name())
     //	tp.Quit()
     //	} 
+
+/**
     tp:=t.List[0].Panes[0].(*action.BufPane)
    // tp.Quit()
     
@@ -612,7 +615,7 @@ func main() {
    // t.List[1].CurPane().Close()
     
     screen.TermMessage(tp.Name())
-	
+*/	
     window.Display()
     
      action.Tabs.UpdateNames()

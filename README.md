@@ -1,3 +1,9 @@
 This is a fork of @zyedidia's micro but i may eventually repurpose it to the end of creating a regex101.com TUI app using micro as the basis.
 
-Currently <code>make build</code> generates ./micro program which when run will only work with two filenames passed as command arguments b/c it attempts to open one and close the second as bufpane(s)
+Currently <code>make build</code> generates ./micro 
+program which when run will only does the same as zyedidia's
+micro build 98ff79db with the addition of accepting two
+ additional command arguments(not as flagged - or -- but
+  simple bash strings) for search in the form of 
+  +/your_search and, optionally, {#iterations of the 
+  search}  e.g.  ./micro my_file.txt +/dog {2}
