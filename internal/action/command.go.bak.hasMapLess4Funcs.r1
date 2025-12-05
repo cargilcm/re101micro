@@ -184,7 +184,6 @@ func InitCommands() {
 		"LastSplit":                 {(*BufPane).LastSplitCmd, nil},
 		"Unsplit":                   {(*BufPane).UnsplitCmd, nil},
 		"VSplit":					 {(*BufPane).VSplitActionCmd, nil},
-		"HSplit":                    {(*BufPane).HSplitActionCmd, nil},
 		"ToggleMacro":               {(*BufPane).ToggleMacroCmd, nil},
 		"PlayMacro":                 {(*BufPane).PlayMacroCmd, nil},
 		"Suspend":                   {(*BufPane).SuspendCmd, nil},
@@ -201,11 +200,7 @@ func InitCommands() {
 		"Deselect":                  {(*BufPane).DeselectCmd, nil},
 		"ClearInfo":                 {(*BufPane).ClearInfoCmd, nil},
 		"None":                      {(*BufPane).NoneCmd, nil},
-		"ScrollUp":                  {(*BufPane).ScrollUpActionCmd, nil},
-		"ScrollDown":                {(*BufPane).ScrollDownActionCmd, nil},
-	
-		// This was changed to InsertNewline but I don't want to break backwards compatibility
-		"InsertEnter": 				 {(*BufPane).InsertNewlineCmd, nil},
+
 	}
 }
 
@@ -1758,18 +1753,3 @@ func (h *BufPane) NoneCmd(args []string) {
 func (h *BufPane) VSplitActionCmd(args []string) {
 	h.VSplitAction()
 }
-
-func (h *BufPane) HSplitActionCmd(args []string) {
-	h.HSplitAction()
-}
-func (h *BufPane) ScrollUpActionCmd(args []string) {
-	h.ScrollUpAction()
-}
-
-func (h *BufPane) ScrollDownActionCmd(args []string) {
-	h.ScrollDownAction()
-}
-/**
-func (h *BufPane) InsertNewlineCmd(args []string) {
-	h.InsertNewline()
-}*/

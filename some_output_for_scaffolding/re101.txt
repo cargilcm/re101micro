@@ -1,0 +1,7 @@
+re  (\t\".*\":\s*)(\(.*),
+sub $1{$2, nil},
+
+
+
+re   \"(.*)\"
+sub  func (h *BufPane) $1Cmd(args []string) {\n	h.$1()\n}

@@ -9,7 +9,23 @@ micro build 98ff79db with the addition of accepting two
   search}  e.g.  ./micro my_file.txt +/dog {2}
 
 
-with the exceptions of scroll up/down, vsplit,hsplit &
-insertenter the bufkeuyctions from bufpane.go have been
-mapped into commands.go so from within micro you can now
-ctrl+e then type them to see what they do in realtime.
+with the exceptions of scroll up/down, VSplit,HSplit (already 
+declared by vsplit/hsplit) & insertenter (for which the
+ go compiler noted there isn't an invokeable
+  bufpane method by that name) the bufkeyctions from bufpane.go have been
+mapped into commands.go, so from within micro, you can now
+ctrl+e then type them and hit enter to see what they do
+ in realtime, directly, instead of invoking in a lua plugin
+
+ edit, i went  back to compare the regex output-i accidentally 
+ substituted the first capture group from my regex (\t\".*\":\s*)(\(.*),
+  and subsequent substitution instead of the second group
+  which meant the signatures on the func XYZCmd() were wrong
+  on a few functions (unsurprisingly most of the key strings
+  matched up to their function equivalents except some 
+  functions were kind of "overloaded" with an argumentless
+  XYZActionCmd hence action in the name).  I assume there
+  was another reason if not also for the fact that vsplit()
+  was defined so to disambiguate a little VSplitAction()
+  may have been conceived).
+
