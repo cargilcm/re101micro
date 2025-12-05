@@ -47,7 +47,7 @@ func TermPrompt(prompt string, options []string, wait bool) int {
 				idx = i
 			}
 		}
-
+		
 		if wait && idx == -1 {
 			fmt.Println("\nInvalid choice.")
 		}

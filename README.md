@@ -7,3 +7,9 @@ micro build 98ff79db with the addition of accepting two
   simple bash strings) for search in the form of 
   +/your_search and, optionally, {#iterations of the 
   search}  e.g.  ./micro my_file.txt +/dog {2}
+
+
+with the exceptions of scroll up/down, vsplit,hsplit &
+insertenter the bufkeuyctions from bufpane.go have been
+mapped into commands.go so from within micro you can now
+ctrl+e then type them to see what they do in realtime.
