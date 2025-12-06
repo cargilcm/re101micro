@@ -206,6 +206,7 @@ func InitCommands() {
 	
 		// This was changed to InsertNewline but I don't want to break backwards compatibility
 		"InsertEnter": 				 {(*BufPane).InsertNewlineCmd, nil},
+		"Bindings": 				 {(*BufPane).BindingsCmd,nil},
 	}
 }
 
@@ -1769,7 +1770,14 @@ func (h *BufPane) ScrollUpActionCmd(args []string) {
 func (h *BufPane) ScrollDownActionCmd(args []string) {
 	h.ScrollDownAction()
 }
-/**
+func (h *BufPane) BindingsCmd(args []string) {
+	t := h.Bindings()/**.GetModes()
+	for k,_ := range t {
+    */	
+    t.Modess["apple"] = false
+    screen.TermMessage(t)
+//	}
+}/**
 func (h *BufPane) InsertNewlineCmd(args []string) {
 	h.InsertNewline()
 }*/

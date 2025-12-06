@@ -49,6 +49,7 @@ type TreeAction struct {
 type KeyTree struct {
 	root  *KeyTreeNode
 	modes map[string]bool
+	Modess map[string]bool
 
 	cursor KeyTreeCursor
 }
@@ -83,7 +84,7 @@ func (k *KeyTreeCursor) MakeClosure(a TreeAction) PaneKeyAction {
 
 	return nil
 }
-
+//var Modest map[string]bool
 // NewKeyTree allocates and returns an empty key tree
 func NewKeyTree() *KeyTree {
 	root := NewKeyTreeNode()
@@ -91,6 +92,7 @@ func NewKeyTree() *KeyTree {
 
 	tree.root = root
 	tree.modes = make(map[string]bool)
+	tree.Modess = tree.modes
 	tree.cursor = KeyTreeCursor{
 		node:      root,
 		wildcards: []KeyEvent{},
@@ -258,4 +260,8 @@ func (k *KeyTree) SetMode(mode string, en bool) {
 // HasMode returns if the given mode is currently active
 func (k *KeyTree) HasMode(mode string) bool {
 	return k.modes[mode]
+}
+
+func (k *KeyTree) GetModes() map[string]bool {
+	return k.modes
 }

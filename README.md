@@ -29,3 +29,29 @@ ctrl+e then type them and hit enter to see what they do
   was defined so to disambiguate a little VSplitAction()
   may have been conceived).
 
+here are the functions that when the bufkeyactions maps are
+merged and then the func names in actions.go are regex'd out
+then the two lists are diff'd, result:
+```
+HSplit
+HSplitAction
+MouseDrag
+MouseMultiCursor
+MousePress
+MouseRelease
+MoveCursorDown
+MoveCursorUp
+Retab
+SaveAsCB(action string, callback func
+SaveCB(action string, callback func
+ScrollAdjust
+ScrollDownAction
+ScrollReachedEnd
+ScrollUpAction
+Search
+SpawnCursorAtLoc
+SpawnMultiCursorUpN
+Suspend
+VSplit  
+VSplitAction
+```
