@@ -1,5 +1,4 @@
-This is a fork of @zyedidia's micro but i may eventually repurpose it to the end of creating a regex101.com TUI app using micro as the basis.
-
+This is a fork of @zyedidia's micro which i thought to maybe eventually repurpose to the end of creating a regex101.com TUI app using micro as the basis, but noting new [insight](https://github.com/zyedidia/micro/issues/3279#issuecomment-2088934103) that was uncovered, specifically that ```[micro] works on individual lines instead of the whole buffer``` would make it harder if not impossible to use the native replace to achieve my goal. Or rather, treating the buffer as input without first piping the whole contents to stdout or something would be a hindrance to my goal 
 Currently <code>make build</code> generates ./micro 
 program which when run will only does the same as zyedidia's
 micro build 98ff79db with the addition of accepting two
