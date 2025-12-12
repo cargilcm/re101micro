@@ -65,4 +65,4 @@ VSplit
 VSplitAction
 ```
 
-The best regex-oriented tui i've seen is [this fork](https://github.com/andriy-git/rexi/tree/master) of rexi (the main rexi is linked to on their project page).
+The best regex-oriented tui i've seen is [this fork](https://github.com/andriy-git/rexi/tree/master) of rexi (the main rexi is linked to by the fork project).
