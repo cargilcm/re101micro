@@ -41,6 +41,7 @@ ctrl+e then type them and hit enter to see what they do
 here are the functions that, when the bufkeyactions maps are
 merged and then the func names in actions.go are regex'd out
 then the two lists are diff'd, result:
+
 ```
 HSplit
 HSplitAction
@@ -64,4 +65,5 @@ Suspend
 VSplit  
 VSplitAction
 ```
+
 The best regex-oriented tui i've seen is [this fork](https://github.com/andriy-git/rexi/tree/master) of rexi (the main rexi is linked to on their project page).
